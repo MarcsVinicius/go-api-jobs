@@ -32,5 +32,6 @@ func CreateOpeningHandler(ctx *gin.Context) {
 		sendError(ctx, http.StatusInternalServerError, "error creating opening on database")
 		return
 	}
+
 	sendSuccess(ctx, "create-opening", opening)
 }
