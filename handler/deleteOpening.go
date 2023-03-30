@@ -8,6 +8,16 @@ import (
 	"github.com/marcsvinicius/go-api-jobs/schemas"
 )
 
+// @Summary Delete Opening
+// @Description Delete a job opening
+// @Tags Openings
+// @Accept json
+// @Produce json
+// @Param id query string true "Opening identification"
+// @Success 200 {object} DeleteOpeningResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opening [delete]
 func DeleteOpeningHandler(ctx *gin.Context) {
 	id := ctx.Query("id")
 	if id == "" {
