@@ -7,18 +7,6 @@ import (
 	"github.com/marcsvinicius/go-api-jobs/schemas"
 )
 
-// @BasePath /api/v1
-
-// @Summary Get Opening
-// @Description Get a job opening
-// @Tags Openings
-// @Accept json
-// @Produce json
-// @Param id query string true "Opening identification"
-// @Success 200 {object} GetAllOpeningResponse
-// @Failure 400 {object} ErrorResponse
-// @Failure 500 {object} ErrorResponse
-// @Router /opening [get]
 func GetOpeningHandler(ctx *gin.Context) {
 	id := ctx.Query("id")
 	if id == "" {
