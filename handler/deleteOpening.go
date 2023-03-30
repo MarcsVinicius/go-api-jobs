@@ -8,6 +8,8 @@ import (
 	"github.com/marcsvinicius/go-api-jobs/schemas"
 )
 
+// @BasePath /api/v1
+
 // @Summary Delete Opening
 // @Description Delete a job opening
 // @Tags Openings
